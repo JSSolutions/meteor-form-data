@@ -2,7 +2,7 @@ Package.describe({
   name: 'jss:meteor-form-data',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: 'A module to create readable "multipart/form-data" streams (https://github.com/form-data/form-data) wrapped for Meteor',
+  summary: 'https://github.com/form-data/form-data wrapped for Meteor',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/JSSolutions/meteor-form-data',
   // By default, Meteor will default to using README.md for documentation.
@@ -24,6 +24,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('form-data');
+  api.use('jss:meteor-form-data');
   api.addFiles('form-data-tests.js', 'server');
 });
